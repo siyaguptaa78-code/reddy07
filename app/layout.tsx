@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Reddy Anna | Reddy Anna Book | Best Betting Id Provider",
   description:
     "Get your Reddy Anna Book ID instantly. Enjoy cricket IPL betting, casino games, & secure platform. Join India’s trusted betting hub today",
+  verification: {
+    google: "CiZXOM8u4QShR7knoNIKpKW7cQTii7q8P7T8s_WV7ls"
+  },
   keywords: [
     "Reddy Anna",
     "Reddy Anna Book",
