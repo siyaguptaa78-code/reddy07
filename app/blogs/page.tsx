@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 import { CONFIG } from "@/utils/config";
@@ -30,6 +31,12 @@ export default function BlogsPage() {
           <section className="w-full flex flex-col gap-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
+                {
+                  title: "U19 Asia Cup 2026: Dates, Teams, Schedule & Everything About the Under-19 Asia Cup",
+                  date: "July 8, 2026",
+                  desc: "The U19 Asia Cup 2026 is expected in October. Defending champions Pakistan, expected teams, format, past winners, last edition's recap and how to watch — all in one place.",
+                  slug: "u19-asia-cup-2026"
+                },
                 {
                   title: "How to Wager on IPL 2026 Live Sessions",
                   date: "May 24, 2026",
@@ -64,14 +71,14 @@ export default function BlogsPage() {
                   <p className="text-gray-300 text-xs md:text-sm leading-relaxed">
                     {blog.desc}
                   </p>
-                  <a
-                    href={CONFIG.whatsappUrl}
-                    target="_blank"
+                  <Link
+                    href={blog.slug ? `/blogs/${blog.slug}` : CONFIG.whatsappUrl}
+                    target={blog.slug ? "_self" : "_blank"}
                     rel="noopener noreferrer"
                     className="text-[#FF4081] hover:text-[#9C27B0] text-xs font-black self-start mt-2 border-b border-dashed border-[#FF4081]/50 hover:border-[#9C27B0]/50 pb-0.5"
                   >
                     Read Full Article
-                  </a>
+                  </Link>
                 </div>
               ))}
             </div>
