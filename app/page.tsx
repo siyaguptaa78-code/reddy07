@@ -185,14 +185,36 @@ export default function HomePage() {
         
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
           {[
-            { name: "UPI", color: "text-blue-400" },
-            { name: "Google Pay", color: "text-red-400" },
-            { name: "Paytm", color: "text-blue-300" },
-            { name: "PhonePe", color: "text-purple-500" },
-            { name: "Bank Transfer", color: "text-green-500" }
+            { 
+              name: "UPI", 
+              content: <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UPI-Logo-vector.svg" alt="UPI" className="h-10 md:h-12 object-contain" /> 
+            },
+            { 
+              name: "Google Pay", 
+              content: <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg" alt="Google Pay" className="h-10 md:h-12 object-contain" /> 
+            },
+            { 
+              name: "Paytm", 
+              content: <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Paytm_Logo_%28standalone%29.svg" alt="Paytm" className="h-8 md:h-10 object-contain" /> 
+            },
+            { 
+              name: "PhonePe", 
+              content: <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/PhonePe_Logo.svg" alt="PhonePe" className="h-10 md:h-12 object-contain" /> 
+            },
+            { 
+              name: "Bank Transfer", 
+              content: (
+                <div className="flex flex-col items-center gap-1 text-green-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/>
+                  </svg>
+                  <span className="font-extrabold text-sm text-center">Bank<br/>Transfer</span>
+                </div>
+              )
+            }
           ].map((method, i) => (
-            <div key={i} className="bg-white rounded-2xl p-4 md:p-6 shadow-xl border border-gray-200 w-32 h-24 md:w-40 md:h-28 flex items-center justify-center">
-               <span className={`font-extrabold text-lg md:text-xl ${method.color}`}>{method.name}</span>
+            <div key={i} className="bg-white rounded-2xl p-4 md:p-6 shadow-xl border border-gray-200 w-32 h-24 md:w-40 md:h-28 flex items-center justify-center hover:scale-105 transition-transform cursor-pointer hover:shadow-2xl">
+               {method.content}
             </div>
           ))}
         </div>
