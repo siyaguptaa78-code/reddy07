@@ -1,575 +1,311 @@
 import React from "react";
 import { CONFIG } from "@/utils/config";
-import { Sidebar } from "@/components/Sidebar";
-import { MatchList } from "@/components/MatchList";
-import { ConicButton } from "@/components/ConicButton";
 import { Accordion } from "@/components/Accordion";
+import { ConicButton } from "@/components/ConicButton";
+import { MatchList } from "@/components/MatchList";
+import { FloatingButtons } from "@/components/FloatingButtons";
 
 export default function HomePage() {
   return (
-    <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-8 select-none">
-      <div className="w-full flex flex-col lg:flex-row gap-8">
-        
-        {/* Left Sidebar - Desktop only */}
-        <div className="hidden lg:block lg:w-1/4">
-          <Sidebar />
-        </div>
+    <div className="w-full bg-[#05080f] text-white font-sans selection:bg-[#00ccff] selection:text-black min-h-screen">
+      <FloatingButtons />
 
-        {/* Main Content Pane */}
-        <div className="w-full lg:w-3/4 flex flex-col gap-8 text-left">
+      {/* 1. Hero Section */}
+      <section className="relative w-full aspect-[2/1] min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="https://reddybookwinin.in/wp-content/uploads/elementor/thumbs/cricket-bg-rlghoi9i0hsj2n8qphq7tivs3mol4s3iin7qqytzxc.webp"
+            alt="Cricket Stadium Background"
+            className="w-full h-full object-cover opacity-60"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#05080f] via-black/50 to-transparent"></div>
+        </div>
+        
+        <div className="relative z-10 text-center px-4 max-w-4xl flex flex-col items-center gap-6 mt-16 md:mt-0">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-wider text-white drop-shadow-2xl">
+            India's Trusted Reddy Anna <br/><span className="text-[#00ccff]">Cricket Betting ID</span> Provider
+          </h1>
           
-          {/* Quick Banners Grid */}
+          <div className="text-gray-200 text-sm md:text-base lg:text-lg font-semibold max-w-2xl bg-black/40 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
+            <p className="mb-3 text-white text-base md:text-xl font-bold">Get Your Verified Reddy Anna ID within Minutes.</p>
+            <div className="flex flex-wrap justify-center gap-4 text-xs md:text-sm text-[#00E5FF]">
+              <span className="flex items-center gap-1">⚡ Fast Approval</span>
+              <span className="flex items-center gap-1">🎧 24x7 Support</span>
+              <span className="flex items-center gap-1">💸 Instant Deposit & Withdrawal</span>
+              <span className="flex items-center gap-1">🛡️ Trusted Since 2010</span>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4">
+            <a href={CONFIG.whatsappUrl} className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#00ccff] to-[#0055ff] hover:from-[#0055ff] hover:to-[#00ccff] text-white font-extrabold rounded-xl shadow-[0_0_20px_rgba(0,204,255,0.4)] transition-all uppercase tracking-wide text-sm md:text-base text-center transform hover:scale-105">
+              GET REDDY ANNA ID
+            </a>
+            <a href={CONFIG.whatsappUrl} className="w-full sm:w-auto px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white font-extrabold rounded-xl shadow-[0_0_20px_rgba(37,211,102,0.4)] transition-all uppercase tracking-wide text-sm md:text-base flex items-center justify-center gap-2 transform hover:scale-105">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+              WHATSAPP NOW
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Trust Section (Visual) */}
+      <section className="w-full py-8 bg-[#0c1322] border-y border-white/5">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm md:text-base font-bold text-gray-300">
+            <span className="flex items-center gap-2"><span className="text-[#00E5FF] text-xl">✓</span>Since 2010</span>
+            <span className="flex items-center gap-2"><span className="text-[#00E5FF] text-xl">✓</span>Thousands of Active Players</span>
+            <span className="flex items-center gap-2"><span className="text-[#00E5FF] text-xl">✓</span>Fast Withdrawal</span>
+            <span className="flex items-center gap-2"><span className="text-[#00E5FF] text-xl">✓</span>Secure IDs</span>
+            <span className="flex items-center gap-2"><span className="text-[#00E5FF] text-xl">✓</span>24/7 Support</span>
+            <span className="flex items-center gap-2"><span className="text-[#00E5FF] text-xl">✓</span>100% Assistance</span>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Why Choose Reddy Anna (Cards) */}
+      <section className="w-full py-12 px-4 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-black text-center mb-8 uppercase text-white tracking-wide">Why Choose <span className="text-[#00ccff]">Reddy Anna</span></h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <a href={CONFIG.whatsappUrl} className="relative group overflow-hidden rounded-3xl border border-white/10 hover:border-[#00ccff]/50 transition-all cursor-pointer bg-gradient-to-br from-[#1a2233] to-[#0c1322] aspect-[2/1] md:aspect-[5/2]">
+            <div className="absolute inset-0 bg-black/40 z-10"></div>
+            <img src={CONFIG.images.cricketCardBg} alt="Cricket Betting" className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500"/>
+            <div className="relative z-20 w-full h-full flex flex-col items-center justify-center p-6 text-center gap-3">
+              <span className="text-4xl">🏏</span>
+              <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wider">Instant Cricket Betting ID</h3>
+              <p className="text-gray-300 font-semibold text-sm md:text-base">Get your ID under 60 seconds and start betting on IPL.</p>
+            </div>
+          </a>
+          <a href={CONFIG.whatsappUrl} className="relative group overflow-hidden rounded-3xl border border-white/10 hover:border-[#FF4081]/50 transition-all cursor-pointer bg-gradient-to-br from-[#1a2233] to-[#0c1322] aspect-[2/1] md:aspect-[5/2]">
+            <div className="absolute inset-0 bg-black/40 z-10"></div>
+            <img src="https://reddybookwinin.in/wp-content/uploads/2026/04/casinob.webp" alt="Casino Games" className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500"/>
+            <div className="relative z-20 w-full h-full flex flex-col items-center justify-center p-6 text-center gap-3">
+              <span className="text-4xl">🎰</span>
+              <h3 className="text-2xl md:text-3xl font-black uppercase tracking-wider text-white">Live Casino Games</h3>
+              <p className="text-gray-300 font-semibold text-sm md:text-base">Play Teen Patti, Andar Bahar, Roulette with real dealers.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      {/* 4. Games Section */}
+      <section className="w-full py-10 bg-[#0c1322]">
+        <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              {
-                title: "E - Cricket",
-                bg: CONFIG.images.eCricketQuickBg,
-                svg: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 17 16" fill="currentColor">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M5.187 9.885l-.024.024.81.826.024-.024a3.8 3.8 0 002-1.3l.143-.073a.85.85 0 00.2-.132l-.253 1.143c-.156-.03-.31-.082-.458-.157l-.143-.073a.85.85 0 00-.681.18l-1.394 1.421a.45.45 0 00-.112.17c-.193.59-.343 1.24-.774 1.68l-.358.364c-.671.684-1.76.684-2.431 0L.504 11.355c-.671-.685-.671-1.795 0-2.48l.357-.364c.432-.44 1.07-.593 1.648-.396.166.056.35.012.474-.115l1.394-1.421c.174-.178.218-.45.107-.674l-.071-.146a3.8 3.8 0 00-.524-2.146l5.089-5.188c1.342-1.369 3.52-1.369 4.862 0 1.343 1.369 1.343 3.589 0 4.958L11.401 9.333H9.78l4.095-4.175c.895-.913.895-2.393 0-3.305-.895-.913-2.346-.913-3.242 0L5.545 7.041c-.174.178-.218.45-.107.674l.071.146a3.8 3.8 0 00-.322 2.124z" />
-                  </svg>
-                )
-              },
-              {
-                title: "Evolution",
-                bg: CONFIG.images.evolutionQuickBg,
-                svg: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
-                    <path d="M12.119 13.889h-.178v-.268h.067c.067 0 .111 0 .178.022.045.023.067.067.067.112.022.067-.045.134-.134.134zm.312-.156c0-.089-.045-.156-.112-.223a.35.35 0 00-.267-.067h-.29v.892h.179v-.335h.156l.178.335h.201l-.201-.357a.38.38 0 00.156-.245zM12.097 14.625c-.38 0-.692-.312-.692-.692 0-.379.312-.691.692-.691.38 0 .692.312.692.691 0 .38-.312.692-.692.692zM12.097 13.086c-.468 0-.87.379-.87.87 0 .49.379.87.87.87.468 0 .87-.379.87-.87 0-.49-.402-.87-.87-.87zM3.022 1.826C7.147-.38 12.454 1.938 12.855 7.534 5.207 8.159 4.293 4.703 3.022 1.826zm0 12.018c4.125 2.207 9.432-.112 9.833-5.708-7.648-.624-8.562 2.832-9.833 5.708z" />
-                  </svg>
-                )
-              },
-              {
-                title: "Aviator",
-                bg: CONFIG.images.aviatorQuickBg,
-                svg: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 64 64" fill="currentColor">
-                    <path d="M10.22 25.208c-1.63-1.359-1.495-3.905.271-5.083l12.092-7.373 7.962-.295 9.233-5.54C46.133 3.106 53.757 2.02 60.923 3.905c2.053 6.345 1.142 13.277-2.481 18.876l-7.251 11.206-.59 8.258-8.257 12.092c-.93.743-2.153 1.01-3.307.721l-.189-.047c-.221-.055-.424-.17-.585-.332l-.343-.343-5.309-8.552-6.488.885-5.014-5.014-4.423-4.718 1.18-6.783-7.373-4.719-.271-.226zm42.74-5.967c0 4.235-3.433 7.668-7.668 7.668-4.235 0-7.668-3.433-7.668-7.668 0-4.235 3.433-7.668 7.668-7.668 4.235 0 7.668 3.433 7.668 7.668z" />
-                  </svg>
-                )
-              },
-              {
-                title: "Sportsbook",
-                bg: CONFIG.images.sportsbookQuickBg,
-                svg: (
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
-                    <path d="M12.925 2.575H11.2V2H4.3v.575H2.575C2.23 2.575 2 2.805 2 3.15v1.38c0 1.3225.9775 2.415 2.3 2.5875V7.175c0 1.6675 1.15 3.0475 2.7025 3.3925L6.6 11.775H5.2775c-.23 0-.46.1725-.5175.4025L4.3 13.5H11.2l-.46-1.3225c-.0575-.23-.2875-.4025-.5175-.4025H8.9l-.4025-1.2075C10.05 10.2225 11.2 8.8425 11.2 7.175V7.1175c1.3225-.1725 2.3-1.265 2.3-2.5875V3.15c0-.345-.23-.575-.575-.575zM4.3 5.9675C3.6675 5.795 3.15 5.22 3.15 4.53v-.805H4.3v2.2425zm4.6 1.7825L7.75 7.1175 6.6 7.75l.2875-1.15-.8625-1.15H7.2325L7.75 4.3l.5175 1.15h1.2075l-.8625 1.15.2875 1.15zm3.45-3.22v.805c0 .69-.5175 1.265-1.15 1.4375V3.725h1.15z" />
-                  </svg>
-                )
-              }
-            ].map((card, idx) => (
-              <a
-                key={idx}
-                href={CONFIG.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="relative overflow-hidden rounded-2xl aspect-[5/2.2] border border-[#007BFF]/10 hover:border-[#007BFF]/35 shadow-md shadow-black group"
-              >
-                <img
-                  src={card.bg}
-                  alt={card.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-350"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/5 flex items-center justify-between px-4 py-2">
-                  <span className="text-white font-extrabold text-sm md:text-base tracking-wide">
-                    {card.title}
-                  </span>
-                  <span className="text-white bg-[#007BFF]/80 hover:bg-[#007BFF] p-1.5 rounded-lg border border-[#007BFF]/15 shadow-sm group-hover:scale-105 transition-all">
-                    {card.svg}
-                  </span>
-                </div>
+              { title: "IPL Betting", icon: "🏏", color: "from-blue-600 to-blue-900" },
+              { title: "Football Betting", icon: "⚽", color: "from-green-600 to-green-900" },
+              { title: "Teen Patti", icon: "🃏", color: "from-purple-600 to-purple-900" },
+              { title: "Andar Bahar", icon: "🎲", color: "from-red-600 to-red-900" },
+            ].map((game, i) => (
+              <a href={CONFIG.whatsappUrl} key={i} className={`bg-gradient-to-br ${game.color} rounded-2xl p-6 flex flex-col items-center justify-center gap-3 text-center border border-white/20 hover:scale-105 transition-transform shadow-xl`}>
+                <span className="text-4xl md:text-5xl drop-shadow-md">{game.icon}</span>
+                <span className="font-extrabold text-sm md:text-base uppercase tracking-wide">{game.title}</span>
               </a>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Match Lists Section */}
-          <MatchList
-            category="cricket"
-            iconUrl="https://reddybookwinin.in/wp-content/uploads/2026/04/cricketicon.webp"
-            title="Cricket Matches"
-          />
-          <MatchList
-            category="football"
-            iconUrl="https://reddybookwinin.in/wp-content/uploads/2026/04/footballicon.webp"
-            title="Football Matches"
-          />
-          <MatchList
-            category="tennis"
-            iconUrl="https://reddybookwinin.in/wp-content/uploads/2026/04/tennisicon.webp"
-            title="Tennis Matches"
-          />
+      {/* 5. SEO Content Section Banner */}
+      <section className="w-full py-16 px-4 max-w-5xl mx-auto text-center flex flex-col gap-6">
+        <h2 className="text-2xl md:text-3xl font-black uppercase text-[#00ccff] border-b border-white/10 pb-4">
+          Reddy Anna Book – Official Reddy Anna Cricket Betting ID Platform
+        </h2>
+        <h3 className="text-lg md:text-xl font-bold text-yellow-400">No.1 Secured Online Betting ID Provider</h3>
+        <div className="text-gray-300 text-sm md:text-base leading-relaxed font-medium space-y-4">
+          <p>
+            Reddy Anna is one of the top secured online betting platform as well as a trusted betting ID provider Since 2010. We are a reliable Reddy Anna agent offering verified Reddy Anna cricket ID's & Casino ID's that allow access to multiple online betting exchanges to play live cricket betting, fantasy sports, IPL betting, casino games, and high-stakes wagering options.
+          </p>
+          <p>
+            ReddyAnna trusted betting platform is premier online betting exchange for high-stake bettors, and international cricket enthusiasts for safe online betting. As an existing player you can directly fast log in Reddy Anna platform and start online betting.
+          </p>
+          <p className="font-bold text-white">Get personalized 24/7 customer support through WhatsApp and Telegram for quick and responsive assistance.</p>
+        </div>
 
-          {/* Casino Section */}
-          <div className="w-full flex flex-col gap-4 mt-6">
-            <div className="flex items-center gap-3 bg-[#0c1322] border border-[#007BFF]/10 rounded-2xl p-4 shadow-sm">
-              <span className="text-lg">🎲</span>
-              <h3 className="text-white font-extrabold text-lg md:text-xl tracking-wide">Casino Games</h3>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {CONFIG.casinos.map((casino, idx) => (
-                <a
-                  key={idx}
-                  href={CONFIG.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative overflow-hidden rounded-2xl aspect-[2.2/1.3] border border-[#007BFF]/10 hover:border-[#007BFF]/30 shadow-md group"
-                >
-                  <img
-                    src={casino.image}
-                    alt={casino.label}
-                    className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-200"
-                  />
-                  <div className="absolute inset-0 bg-black/40 hover:bg-black/20 transition-all flex items-end p-3">
-                    <span className="text-white font-bold text-xs bg-black/60 px-2.5 py-1 rounded-md">
-                      {casino.label}
-                    </span>
-                  </div>
-                </a>
-              ))}
-            </div>
+        {/* WhatsApp Banner */}
+        <div className="mt-8 bg-gradient-to-r from-[#0c1322] via-[#1a2233] to-[#0c1322] border border-[#00ccff]/20 rounded-3xl p-6 md:p-10 flex flex-col items-center gap-6 shadow-[0_0_30px_rgba(0,204,255,0.1)]">
+          <div className="bg-[#25D366] rounded-full p-4 animate-whatsapp-pulse">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z"/></svg>
+          </div>
+          <h3 className="text-xl md:text-2xl font-black uppercase text-white">Chat with us on <span className="text-[#25D366]">WhatsApp</span></h3>
+          
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+            <a href={CONFIG.whatsappUrl} className="bg-gradient-to-b from-[#488cfb] to-[#0055ff] text-white py-3 px-4 rounded-xl font-extrabold uppercase text-xs md:text-sm text-center shadow-lg hover:scale-105 transition-transform">
+              Get Reddy Anna ID
+            </a>
+            <a href={CONFIG.whatsappUrl} className="bg-gradient-to-b from-gray-700 to-gray-900 text-white py-3 px-4 rounded-xl font-extrabold uppercase text-xs md:text-sm text-center shadow-lg hover:scale-105 transition-transform border border-gray-600">
+              Mobile App Download
+            </a>
+            <a href={CONFIG.whatsappUrl} className="bg-gradient-to-b from-[#488cfb] to-[#0055ff] text-white py-3 px-4 rounded-xl font-extrabold uppercase text-xs md:text-sm text-center shadow-lg hover:scale-105 transition-transform">
+              Get Instant ID By WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Live Matches & Popular Games */}
+      <section className="w-full py-12 bg-[#0c1322]">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col gap-10">
+          <div className="w-full md:w-3/4 mx-auto">
+             <MatchList
+               category="cricket"
+               iconUrl="https://reddybookwinin.in/wp-content/uploads/2026/04/cricketicon.webp"
+               title="Live Cricket Matches"
+             />
           </div>
 
-          {/* Core Introduction Details */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 mt-6 flex flex-col md:flex-row gap-6 items-center shadow-lg shadow-black">
+          <div className="w-full mx-auto bg-gradient-to-r from-[#1a2233] to-[#05080f] border border-[#00ccff]/20 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row items-center gap-8 shadow-xl">
+            <div className="w-full md:w-1/3 aspect-square max-w-[200px] border-4 border-[#ffcc00] rounded-3xl p-4 flex flex-col items-center justify-center text-center">
+               <span className="font-black text-xl text-white">BETTING<br/>ID</span>
+            </div>
             <div className="flex-1 flex flex-col gap-4">
-              <h1 className="text-[#00E5FF] font-black text-2xl md:text-3xl tracking-wide leading-tight flex flex-col gap-2">
-                <span>Reddy Anna – Cricket Betting & Sports ID</span>
-                <span className="text-lg md:text-xl text-white">Reddy Anna Cricket Betting ID For IPL & Live Casino Sports Betting</span>
-              </h1>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                Are you a new bettor looking to make your first ever cricket betting or have a long history of high stakes betting but want to experience the fastest payout processing in the world? Well, you begin your sports betting adventure by getting a <a href="/" className="text-[#00ccff] hover:underline font-bold">redyanabook</a> verified sports betting id .
+              <h3 className="text-2xl md:text-3xl font-black text-[#ffcc00] uppercase tracking-wide">Online Betting ID</h3>
+              <p className="text-gray-300 font-semibold text-sm">
+                Reddy Anna Book gives you a secure Online Betting ID that lets you play smoothly across multiple gaming platforms. Once your account is created, you can jump into cricket, football, kabaddi and many more sports.
               </p>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                Millions of cricket fans trust reddyanna book as their #1 choice for live sports betting and online casino gaming needs due to our unmatched instant id creation, secure payment integration, live odds, and 24/7 customer support.
-              </p>
-              <div className="pt-2">
-                <ConicButton text="Join Reddy Anna Book" />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+                <div className="bg-black/40 border border-white/10 rounded-xl p-3 text-xs font-bold text-gray-200 flex items-center gap-2"><span className="text-yellow-500">🔒</span> Secure Transactions</div>
+                <div className="bg-black/40 border border-white/10 rounded-xl p-3 text-xs font-bold text-gray-200 flex items-center gap-2"><span className="text-blue-500">🌍</span> Multiple-Sports Betting</div>
+                <div className="bg-black/40 border border-white/10 rounded-xl p-3 text-xs font-bold text-gray-200 flex items-center gap-2"><span className="text-red-500">🏏</span> Cricket, Football & Kabaddi</div>
+                <div className="bg-black/40 border border-white/10 rounded-xl p-3 text-xs font-bold text-gray-200 flex items-center gap-2"><span className="text-green-500">✅</span> Protected Account</div>
               </div>
             </div>
-            <div className="w-full md:w-2/5 flex-shrink-0 rounded-2xl overflow-hidden shadow-md">
-              <img
-                src={CONFIG.images.brandIntroBg}
-                alt="Reddy Anna Book Provider"
-                className="w-full h-auto object-cover"
-              />
+            <div className="w-full md:w-1/4 flex justify-center">
+              <a href={CONFIG.whatsappUrl} className="bg-gradient-to-r from-[#ff6a00] to-[#ee0979] text-white font-extrabold uppercase py-4 px-8 rounded-full shadow-[0_0_20px_rgba(238,9,121,0.4)] hover:scale-105 transition-transform text-center w-full">
+                GET BETTING ID
+              </a>
             </div>
-          </section>
-
-          {/* Quick Statistics Table */}
-          <section className="w-full bg-gradient-to-br from-[#f0f8ff] to-white border border-[#007BFF]/20 rounded-3xl p-6 shadow-xl text-black">
-            <h3 className="text-lg font-black tracking-wide border-b border-[#007BFF]/10 pb-2 mb-4 text-[#007BFF] uppercase">
-              🏆 Trust Statistics
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left font-bold border-separate border-spacing-y-3">
-                <thead>
-                  <tr className="bg-[#00E5FF] text-black text-xs md:text-sm">
-                    <th className="p-3.5 rounded-l-xl">Trusted Since</th>
-                    <th className="p-3.5">Sports Betting</th>
-                    <th className="p-3.5 rounded-r-xl">Support</th>
-                  </tr>
-                </thead>
-                <tbody className="text-sm">
-                  <tr className="bg-[#e6f2ff] border border-[#007BFF]/10">
-                    <td className="p-4 rounded-l-xl border-l-4 border-[#007BFF]">2010 (14+ Years)</td>
-                    <td className="p-4">Cricket, Football, Kabaddi, etc.</td>
-                    <td className="p-4 rounded-r-xl">24/7 (WhatsApp & Telegram)</td>
-                  </tr>
-                  <tr className="bg-[#f0f8ff] text-xs uppercase tracking-wider text-gray-500 font-extrabold">
-                    <td className="p-2 pl-4">Time to Create ID</td>
-                    <td className="p-2">Payment Gateways</td>
-                    <td className="p-2">Minimum Deposit</td>
-                  </tr>
-                  <tr className="bg-[#e6f2ff] border border-[#007BFF]/10">
-                    <td className="p-4 rounded-l-xl border-l-4 border-[#007BFF]">Under 60 seconds</td>
-                    <td className="p-4">UPI, Paytm, GPay, Bank</td>
-                    <td className="p-4 rounded-r-xl">
-                      <span className="text-[#007BFF]">₹100</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* Iframe Widget Section */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-4 md:p-6 shadow-md">
-            <h2 className="text-white font-extrabold text-xl mb-4 tracking-wide border-b border-[#007BFF]/10 pb-2.5">
-              IPL 2026 Match Update - Live & Upcoming
-            </h2>
-            <div className="w-full overflow-hidden rounded-2xl border border-[#007BFF]/5">
-              <iframe
-                src="https://cwidget.crictimes.org/?v=1.1&bo=06bffa&b=ffffff&a=06bffa"
-                style={{ width: "100%", minHeight: "450px" }}
-                frameBorder="0"
-                scrolling="yes"
-                title="Crictimes Live Match Widget"
-              />
-            </div>
-          </section>
-
-          {/* What Is Reddy Anna */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row-reverse gap-6 items-center shadow-md shadow-black">
-            <div className="flex-1 flex flex-col gap-4">
-              <h2 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide">
-                What is Reddy Anna? Cricket Betting ID Overview
-              </h2>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                Reddy Anna is India’s fastest-growing online cricket betting ID provider that also facilitates football, kabaddi, and live casino betting for sports enthusiasts. This platform has remained reliable since 2010 and is used by millions of sports fans countrywide.
-              </p>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed font-bold">
-                Some of the key features of the popular redyanabook include:
-              </p>
-              <ul className="text-gray-300 text-sm md:text-base flex flex-col gap-2 font-semibold mt-1">
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00E5FF]">✓</span> Live cricket betting odds on all major tournaments like IPL, T20 World Cup, Test series, BBL, PSL, etc.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00E5FF]">✓</span> Football, Kabaddi, Tennis, Basketball, etc.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00E5FF]">✓</span> Live Casino Games: Teen Patti, Andar Bahar, Roulette, Blackjack, Poker, etc.
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-[#00E5FF]">✓</span> Quick deposit & withdrawal through UPI, Paytm, Bank, and GPay.
-                </li>
-              </ul>
-              <div className="pt-2">
-                <ConicButton text="Learn More About Us" href="/about-us" />
-              </div>
-            </div>
-            <div className="w-full md:w-2/5 flex-shrink-0 rounded-2xl overflow-hidden shadow-md">
-              <img
-                src={CONFIG.images.whatIsReddyAnnaBg}
-                alt="Introduction to Reddy Anna Book"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </section>
-
-          {/* Why Choose Reddy Anna */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 flex flex-col gap-6 shadow-md shadow-black">
-            <h2 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide border-b border-[#007BFF]/10 pb-2">
-              Why Choose Reddy Anna?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {[
-                {
-                  title: "1. Best Cricket ID Provider with 14+ Years of Trust",
-                  desc: "Reddy Anna betting has been a reliable source of income for millions of Indians since 2010. We have served over a million customers nationwide and have never failed to pay out any bettor’s winning amount."
-                },
-                {
-                  title: "2. Fastest Cricket Betting ID Creation (< 60 Seconds)",
-                  desc: "You can get started with betting within minutes by contacting our official WhatsApp number and sharing your personal details with us."
-                },
-                {
-                  title: "3. Best Odds for Cricket Betting & Casino Games",
-                  desc: "We provide some of the best odds in the business, which covers all betting odds for ball by ball, match winner, and other special offers."
-                },
-                {
-                  title: "4. 24/7 WhatsApp Customer Care",
-                  desc: "Our customer support executives are available round the clock to assist you with any query related to deposits or withdrawals. You get a response within 2 minutes of sharing your query on WhatsApp."
-                }
-              ].map((reason, idx) => (
-                <div key={idx} className="bg-[#05080f] p-5 rounded-2xl border border-[#007BFF]/5 hover:border-[#007BFF]/15 transition-all">
-                  <h4 className="text-white font-extrabold text-base mb-2">{reason.title}</h4>
-                  <p className="text-gray-300 text-sm leading-relaxed">{reason.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Payment Ecosystem Table */}
-            <div className="mt-4 bg-[#05080f] border border-[#007BFF]/5 rounded-2xl p-5">
-              <h4 className="text-white font-black text-sm mb-3 uppercase tracking-wider text-[#00E5FF]">
-                💳 India-First Payment Ecosystem
-              </h4>
-              <div className="overflow-x-auto">
-                <table className="w-full text-left font-bold border-separate border-spacing-y-2 text-xs md:text-sm">
-                  <thead>
-                    <tr className="text-gray-400">
-                      <th className="pb-2">Payment Method</th>
-                      <th className="pb-2">Processing Time</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-gray-200">
-                    <tr className="bg-[#0c1322]/80 border-b border-[#007BFF]/5">
-                      <td className="p-3 rounded-l-xl">UPI Integration: PhonePe, GPay, BHIM</td>
-                      <td className="p-3 rounded-r-xl text-green-400">Instant deposit</td>
-                    </tr>
-                    <tr className="bg-[#0c1322]/80">
-                      <td className="p-3 rounded-l-xl">Paytm Wallet, Net Banking</td>
-                      <td className="p-3 rounded-r-xl text-green-400">Instant deposit</td>
-                    </tr>
-                    <tr className="bg-[#0c1322]/80">
-                      <td className="p-3 rounded-l-xl">Withdraw to any bank</td>
-                      <td className="p-3 rounded-r-xl text-yellow-400">Within 2-4 hours</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-
-          {/* Step-by-Step Guide */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 shadow-md">
-            <h2 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide mb-2 text-center md:text-left">
-              How to Create Reddy Anna Cricket Betting ID – Step by Step
-            </h2>
-            <p className="text-gray-300 text-sm md:text-base mb-6 text-center md:text-left font-semibold">
-              To make your first-ever sports betting, you need to generate a cricket betting id . All you have to do is follow these simple steps:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {[
-                { title: "1. Go to Website", desc: "Visit reddybluebook.in – Always make sure to generate your cricket betting id from the trusted source only." },
-                { title: "2. Contact WhatsApp Number", desc: "By clicking on the WhatsApp icon, you will be redirected to our WhatsApp chat support. Just send us a message, and we will respond within a few seconds." },
-                { title: "3. Share Your Details", desc: "Provide us with your desired username and a strong password. Your redyanabook id will be generated within 60 seconds." },
-                { title: "4. Deposit Money & Start Betting", desc: "You can use your UPI app to fund your account and begin betting on live sports events and casino games." }
-              ].map((step, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#05080f] border border-[#007BFF]/5 hover:border-[#007BFF]/15 p-4 rounded-2xl flex flex-col gap-3 items-center text-center shadow-md"
-                >
-                  <img
-                    src={CONFIG.images.steps[idx] || CONFIG.images.steps[0]}
-                    alt={`Step ${idx + 1}`}
-                    className="h-16 w-auto object-contain"
-                  />
-                  <h4 className="text-white font-extrabold text-sm">{step.title}</h4>
-                  <p className="text-gray-400 text-xs leading-normal">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 bg-[#05080f] border-l-4 border-[#00E5FF] p-4 rounded-r-2xl text-xs md:text-sm text-gray-300 font-semibold leading-relaxed">
-              <strong>PRO TIP:</strong> Do you want to learn how to use a cricket betting id before making a real bet? Simply ask our WhatsApp support to generate a free demo id . This allows you to practice sports betting without risking any real money.
-            </div>
-          </section>
-
-          {/* Bonuses & Promotions */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 shadow-md">
-            <h3 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide mb-2">
-              Reddy Anna Offers & Bonuses
-            </h3>
-            <p className="text-gray-300 text-sm md:text-base font-semibold mb-6">We offer a wide range of attractive first-time bonuses to all our new users.</p>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-              {[
-                {
-                  title: "Welcome Bonus",
-                  desc: "Boost your opening balance with our welcome bonus package for new users.",
-                  img: CONFIG.images.bonuses.welcome
-                },
-                {
-                  title: "Daily Login Bonus",
-                  desc: "Log in during festive seasons or matchdays and unlock free bets and credits.",
-                  img: CONFIG.images.bonuses.daily
-                },
-                {
-                  title: "Referral Bonus",
-                  desc: "Invite your friends and earn referral cash rewards on their first deposits.",
-                  img: CONFIG.images.bonuses.referral
-                },
-                {
-                  title: "Seasonal Cashback",
-                  desc: "Special cashbacks, reload offers, and odds boosts throughout IPL seasons.",
-                  img: CONFIG.images.bonuses.seasonal
-                }
-              ].map((bonus, idx) => (
-                <div
-                  key={idx}
-                  className="bg-[#05080f] border border-[#007BFF]/5 hover:border-[#007BFF]/15 p-5 rounded-2xl flex flex-col gap-3 items-center text-center transition-all shadow-md"
-                >
-                  <img src={bonus.img} alt={bonus.title} className="h-20 w-20 object-contain" />
-                  <h4 className="text-white font-extrabold text-sm tracking-wide">{bonus.title}</h4>
-                  <p className="text-gray-400 text-xs leading-normal">{bonus.desc}</p>
-                </div>
-              ))}
-            </div>
-            <div className="mt-6 pt-2 text-center md:text-left">
-              <ConicButton text="Get Reddy Anna Bonus" />
-            </div>
-          </section>
-
-          {/* App download section */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 flex flex-col gap-4 shadow-md">
-            <h3 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide">
-              Reddy Anna Sports Betting App – Download Now
-            </h3>
-            <p className="text-gray-300 text-sm md:text-base leading-relaxed font-semibold">
-              The reddyanna mobile betting app is one of the most reliable and fastest sports betting apps in India right now. Designed for performance, this official app brings you the best of reddybluebook.in experience directly on your mobile device. Some of the amazing features of our mobile app include:
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
-              <div className="bg-[#05080f] p-5 rounded-2xl border border-[#007BFF]/5">
-                <ul className="text-gray-300 text-xs md:text-sm flex flex-col gap-4 font-semibold">
-                  <li>
-                    <span className="text-[#00E5FF] font-bold text-sm">⚡ Fast & Reliable</span><br />
-                    You can complete deposits, withdrawals, and betting in an instant without lagging.
-                  </li>
-                  <li>
-                    <span className="text-[#00E5FF] font-bold text-sm">🏏 Live Ball-by-ball Scores and Odds</span><br />
-                    Get live sports scores and betting odds directly on your smartphone with the reddyanna app.
-                  </li>
-                  <li>
-                    <span className="text-[#00E5FF] font-bold text-sm">🔐 Fingerprint & Face ID Scanner</span><br />
-                    Your biometric data is safe with our mobile betting app as it does not store your sensitive information.
-                  </li>
-                  <li>
-                    <span className="text-[#00E5FF] font-bold text-sm">📶 Works on 3G/4G Networks</span><br />
-                    You can use our mobile betting app on both 3G and 4G networks without any hassles.
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-[#05080f] p-5 rounded-2xl border border-[#007BFF]/5 flex flex-col justify-between">
-                <div>
-                  <h4 className="text-white font-extrabold text-sm mb-2 uppercase tracking-wider text-[#00E5FF]">
-                    How to Download Reddy Anna App
-                  </h4>
-                  <p className="text-gray-400 text-xs leading-relaxed font-semibold">
-                    Android users can directly download the apk file, whereas iOS users can add the bookmark to their Safari browser. Always make sure to use the exact URL to avoid phishing attempts.
-                  </p>
-                </div>
-                <div className="pt-4 text-left">
-                  <a
-                    href={CONFIG.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-[#00E5FF] to-[#007BFF] text-black font-extrabold text-xs py-2 px-6 rounded-full hover:shadow-lg transition-all"
-                  >
-                    Download Official App
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Exchange Section */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-center shadow-md">
-            <div className="flex-1 flex flex-col gap-4">
-              <h2 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide">
-                Reddy Anna Exchange – Get Match Odds
-              </h2>
-              <p className="text-gray-300 text-sm md:text-base leading-relaxed">
-                Unlike traditional odds betting, Reddy Anna Exchange allows you to bet on sports events with other users. So, if you are looking for a more interactive betting experience, you should try our Reddy Anna Tiger and Sky Exchange services.
-              </p>
-              <ul className="text-gray-300 text-xs md:text-sm flex flex-col gap-2 font-semibold mt-2">
-                <li>• <strong>Reddy Anna Tiger Exchange</strong></li>
-                <li>• <strong>Reddy Anna Sky Exchange</strong></li>
-              </ul>
-              <div className="pt-2">
-                <ConicButton text="Join Reddy Anna Book" />
-              </div>
-            </div>
-            <div className="w-full md:w-2/5 flex-shrink-0 rounded-2xl overflow-hidden shadow-md">
-              <img
-                src={CONFIG.images.exchangeBg}
-                alt="Reddy Anna Book Exchange Platforms"
-                className="w-full h-auto object-cover"
-              />
-            </div>
-          </section>
-
-          {/* Detailed Platform Comparison */}
-          <section className="w-full bg-gradient-to-br from-[#f0f8ff] to-white border border-[#007BFF]/20 rounded-3xl p-6 shadow-xl text-black">
-            <h3 className="text-lg font-black tracking-wide border-b border-[#007BFF]/10 pb-2 mb-4 text-[#007BFF] uppercase">
-              ⚖️ Comparison Between Reddy Anna & Others
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full text-left font-bold border-separate border-spacing-y-2.5 text-xs md:text-sm">
-                <thead>
-                  <tr className="bg-[#fff4c1] text-black">
-                    <th className="p-3 rounded-l-xl">Features</th>
-                    <th className="p-3 bg-[#00E5FF] text-black border-x border-[#007BFF]/10">Reddy Anna Betting</th>
-                    <th className="p-3 rounded-r-xl">Others</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="bg-[#e6f2ff] hover:scale-[1.002] transition-transform">
-                    <td className="p-3.5 rounded-l-xl border-l-4 border-[#007BFF]">Trusted Since</td>
-                    <td className="p-3.5 bg-[#fff7df] border-x border-[#007BFF]/15 font-black text-[#007BFF]">14+ Years (2010)</td>
-                    <td className="p-3.5 rounded-r-xl text-gray-500">2 to 5 Years</td>
-                  </tr>
-                  <tr className="bg-[#e6f2ff] hover:scale-[1.002] transition-transform">
-                    <td className="p-3.5 rounded-l-xl border-l-4 border-[#007BFF]">Sports Betting</td>
-                    <td className="p-3.5 bg-[#fff7df] border-x border-[#007BFF]/15 font-black text-[#007BFF]">Cricket, Football, Kabaddi, etc.</td>
-                    <td className="p-3.5 rounded-r-xl text-gray-500">Cricket, Football, Kabaddi, etc.</td>
-                  </tr>
-                  <tr className="bg-[#e6f2ff] hover:scale-[1.002] transition-transform">
-                    <td className="p-3.5 rounded-l-xl border-l-4 border-[#007BFF]">ID Creation</td>
-                    <td className="p-3.5 bg-[#fff7df] border-x border-[#007BFF]/15 font-black text-[#007BFF]">Under 60 Seconds</td>
-                    <td className="p-3.5 rounded-r-xl text-gray-500">Minutes to Hours</td>
-                  </tr>
-                  <tr className="bg-[#e6f2ff] hover:scale-[1.002] transition-transform">
-                    <td className="p-3.5 rounded-l-xl border-l-4 border-[#007BFF]">Withdrawal Speed</td>
-                    <td className="p-3.5 bg-[#fff7df] border-x border-[#007BFF]/15 font-black text-[#007BFF]">2-4 Hours</td>
-                    <td className="p-3.5 rounded-r-xl text-gray-500">24 to 72 Hours</td>
-                  </tr>
-                  <tr className="bg-[#e6f2ff] hover:scale-[1.002] transition-transform">
-                    <td className="p-3.5 rounded-l-xl border-l-4 border-[#007BFF]">Support</td>
-                    <td className="p-3.5 bg-[#fff7df] border-x border-[#007BFF]/15 font-black text-[#007BFF]">24/7 WhatsApp</td>
-                    <td className="p-3.5 rounded-r-xl text-gray-500">Email / Limited Hours</td>
-                  </tr>
-                  <tr className="bg-[#e6f2ff] hover:scale-[1.002] transition-transform">
-                    <td className="p-3.5 rounded-l-xl border-l-4 border-[#007BFF]">Free Demo ID</td>
-                    <td className="p-3.5 bg-[#fff7df] border-x border-[#007BFF]/15 font-black text-green-700">Yes</td>
-                    <td className="p-3.5 rounded-r-xl text-gray-500">Rarely</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* Collapsible FAQ Section */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 shadow-md">
-            <h3 className="text-white font-extrabold text-xl md:text-2xl mb-6 tracking-wide border-b border-[#007BFF]/10 pb-3 flex items-center gap-2">
-              <span className="text-[#00E5FF]">❓</span> Frequently Asked Questions
-            </h3>
-            <Accordion items={CONFIG.faqs} />
-          </section>
-
-          {/* Deposit and Withdrawal */}
-          <section className="w-full bg-[#0c1322] border border-[#007BFF]/10 rounded-3xl p-6 md:p-8 shadow-md">
-            <h3 className="text-[#00E5FF] font-black text-xl md:text-2xl tracking-wide mb-6">
-              How to Deposit & Withdraw on Reddy Anna Website
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-[#05080f] p-5 rounded-2xl border border-[#007BFF]/5">
-                <h4 className="text-white font-extrabold text-sm mb-3 uppercase tracking-wider text-[#00E5FF]">
-                  📥 Making a Deposit
-                </h4>
-                <ul className="text-gray-300 text-xs md:text-sm flex flex-col gap-2 font-semibold leading-relaxed">
-                  <li>1. Go to Wallet/Deposit Section: On the website, go to the wallet/deposit tab.</li>
-                  <li>2. Choose Your Preferred Mode: You will get various deposit options, such as UPI, GPay, Paytm, and Net Banking.</li>
-                  <li>3. Enter the Amount to Deposit: Specify the amount you want to deposit. The minimum deposit amount is ₹100.</li>
-                  <li>4. Make a Payment: Complete the transaction, and your funds will be reflected right away.</li>
-                </ul>
-              </div>
-              <div className="bg-[#05080f] p-5 rounded-2xl border border-[#007BFF]/5">
-                <h4 className="text-white font-extrabold text-sm mb-3 uppercase tracking-wider text-[#00E5FF]">
-                  📤 Making a Withdrawal
-                </h4>
-                <ul className="text-gray-300 text-xs md:text-sm flex flex-col gap-2 font-semibold leading-relaxed">
-                  <li>1. Go to Withdrawal Section: On the website, navigate to the withdrawal section.</li>
-                  <li>2. Specify the Amount to Withdraw: Give the amount you want to withdraw.</li>
-                  <li>3. Choose the Destination: Select the wallet or bank account to which you want the money transferred.</li>
-                  <li>4. Confirm Transaction: The amount will be reflected in your account within 2-4 hours.</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* Start Journey Callout */}
-          <section className="w-full bg-gradient-to-r from-[#0c1322] to-[#121c33] border border-[#007BFF]/15 rounded-3xl p-6 md:p-8 text-center flex flex-col items-center gap-4 shadow-lg shadow-black">
-            <h3 className="text-[#00E5FF] font-black text-xl md:text-2xl uppercase tracking-wider">
-              Ready to Get Started?
-            </h3>
-            <p className="text-gray-200 text-sm md:text-base max-w-xl font-semibold leading-relaxed">
-              Visit reddybluebook.in | Click WhatsApp button | Get your ID in 60 seconds. New users can request a free trial Demo ID instantly. Winnings are processed within 2-4 hours guaranteed!
-            </p>
-            <div className="pt-2">
-              <ConicButton text="Get Your Verified ID Now" />
-            </div>
-          </section>
-
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* 7. Deposit & Withdrawal */}
+      <section className="w-full py-16 px-4 max-w-7xl mx-auto flex flex-col items-center text-center gap-10">
+        <h2 className="text-3xl md:text-4xl font-black uppercase text-white tracking-wide">Deposit & Withdrawal</h2>
+        
+        <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+          {[
+            { name: "UPI", color: "text-blue-400" },
+            { name: "Google Pay", color: "text-red-400" },
+            { name: "Paytm", color: "text-blue-300" },
+            { name: "PhonePe", color: "text-purple-500" },
+            { name: "Bank Transfer", color: "text-green-500" }
+          ].map((method, i) => (
+            <div key={i} className="bg-white rounded-2xl p-4 md:p-6 shadow-xl border border-gray-200 w-32 h-24 md:w-40 md:h-28 flex items-center justify-center">
+               <span className={`font-extrabold text-lg md:text-xl ${method.color}`}>{method.name}</span>
+            </div>
+          ))}
+        </div>
+        
+        <p className="text-lg md:text-xl font-bold text-[#00ccff]">
+          Instant Deposit, Fast Withdrawal, Safe Transactions, 24x7 Assistance
+        </p>
+      </section>
+
+      {/* 8. Statistics */}
+      <section className="w-full py-12 bg-[#0c1322]">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-black uppercase text-white mb-10">Why Thousands Choose Us</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
+            {[
+              { val: "15+", label: "Years Experience", icon: "🎖️" },
+              { val: "5000+", label: "Daily Users", icon: "👥" },
+              { val: "24x7", label: "Support", icon: "🎧" },
+              { val: "Fast", label: "Withdrawals", icon: "⚡" },
+              { val: "99%", label: "Success Rate", icon: "⭐" },
+            ].map((stat, i) => (
+              <div key={i} className="bg-[#1a2233] border border-[#00ccff]/20 rounded-3xl p-6 flex flex-col items-center justify-center gap-3 shadow-lg hover:-translate-y-2 transition-transform">
+                <span className="text-3xl">{stat.icon}</span>
+                <span className="text-2xl md:text-3xl font-black text-white">{stat.val}</span>
+                <span className="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-wide">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 9. How to section */}
+      <section className="w-full py-16 px-4 max-w-7xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-black uppercase text-center text-white tracking-wide mb-10">How to Create Your Reddy Anna Account</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+           {[
+             { step: "Step One", title: "Visit Website", desc: "Go to reddypurplebook.in or click WhatsApp", icon: "🌐" },
+             { step: "Step Two", title: "Message Us", desc: "Send a message asking for a new ID", icon: "💬" },
+             { step: "Step Three", title: "Deposit", desc: "Make your first minimum deposit via UPI", icon: "💳" },
+             { step: "Completed", title: "Start Betting", desc: "Get credentials instantly and start playing!", icon: "👍" }
+           ].map((item, i) => (
+             <div key={i} className="bg-[#0c1322] border border-white/10 hover:border-[#00ccff]/30 rounded-3xl p-8 flex flex-col items-center text-center gap-4 transition-all hover:bg-[#1a2233]">
+               <div className="w-16 h-16 bg-[#0055ff] rounded-full flex items-center justify-center text-2xl shadow-lg shadow-blue-500/30">
+                 {item.icon}
+               </div>
+               <h3 className="font-black text-lg text-white">{item.step}</h3>
+               <h4 className="font-bold text-[#00ccff] text-sm">{item.title}</h4>
+               <p className="text-gray-400 text-xs font-semibold">{item.desc}</p>
+             </div>
+           ))}
+        </div>
+      </section>
+
+      {/* 10. Customer Reviews */}
+      <section className="w-full py-12 bg-[#0c1322]">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-black uppercase text-center text-white mb-10">Customer Reviews</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {(CONFIG.reviews || []).slice(0,3).map((review: any, i: number) => (
+              <div key={i} className="bg-[#1a2233] border border-[#00ccff]/10 rounded-3xl p-8 flex flex-col gap-4 shadow-xl">
+                <div className="flex gap-1 text-yellow-400 text-lg">
+                  ★★★★★
+                </div>
+                <p className="text-gray-300 font-semibold italic text-sm leading-relaxed">"{review.text}"</p>
+                <div className="mt-4 pt-4 border-t border-white/5 flex flex-col">
+                  <span className="font-bold text-white text-sm">{review.name}</span>
+                  <span className="text-xs text-gray-500">Verified User</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 11. FAQ */}
+      <section className="w-full py-16 px-4 max-w-4xl mx-auto">
+        <h2 className="text-3xl font-black uppercase text-center text-white mb-10 tracking-wide">Frequently Asked Questions</h2>
+        <div className="bg-[#0c1322] rounded-3xl p-6 md:p-10 border border-[#00ccff]/20 shadow-2xl">
+          <Accordion items={CONFIG.faqs} />
+        </div>
+      </section>
+
+      {/* 12. Final CTA */}
+      <section className="w-full py-20 bg-gradient-to-b from-[#05080f] to-[#0c1322]">
+        <div className="max-w-4xl mx-auto px-4 text-center flex flex-col items-center gap-8">
+          <h2 className="text-4xl md:text-5xl font-black uppercase text-[#00E5FF] tracking-widest drop-shadow-lg">
+            READY TO GET STARTED?
+          </h2>
+          <div className="text-gray-300 font-bold text-lg md:text-xl space-y-2">
+            <p>Visit reddypurplebook.in | Click WhatsApp button | Get your ID in 60 seconds.</p>
+            <p>New users can request a free trial Demo ID instantly.</p>
+            <p className="text-white">Winnings are processed within 2-4 hours guaranteed!</p>
+          </div>
+          
+          <div className="mt-6">
+            <div className="border border-white/20 rounded-full p-1 inline-flex">
+              <a href={CONFIG.whatsappUrl} className="bg-gradient-to-r from-gray-800 to-gray-900 hover:from-gray-700 hover:to-gray-800 text-white px-8 py-4 rounded-full font-extrabold uppercase text-sm md:text-base tracking-wide border border-white/10 shadow-lg flex items-center justify-center gap-3 transition-all hover:scale-105">
+                 Get Your Verified ID Now
+              </a>
+            </div>
+          </div>
+          
+          <div className="flex flex-col md:flex-row gap-4 mt-8 w-full justify-center max-w-xl">
+             <a href={CONFIG.whatsappUrl} className="flex-1 bg-[#25D366] text-white py-4 rounded-xl font-extrabold uppercase tracking-wide flex items-center justify-center gap-2 hover:bg-[#128C7E] transition-colors shadow-lg shadow-green-900/50">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z"/></svg>
+               WhatsApp
+             </a>
+             <a href={CONFIG.whatsappUrl} className="flex-1 bg-gradient-to-r from-[#00ccff] to-[#0055ff] text-white py-4 rounded-xl font-extrabold uppercase tracking-wide flex items-center justify-center hover:opacity-90 transition-opacity shadow-lg shadow-blue-900/50">
+               Register Now
+             </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

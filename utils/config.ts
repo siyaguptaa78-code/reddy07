@@ -151,36 +151,43 @@ export const CONFIG = {
 
   faqs: [
     {
-      question: "What is a Reddy Anna ID?",
-      answer: "A Reddy Anna ID is your verified personal account that gives you access to cricket betting, sports wagering, and live casino games on the Reddy Anna platform. It is created instantly via WhatsApp and is linked to your personal wallet for deposits and withdrawals."
+      question: "How to get Reddy Anna ID?",
+      answer: "Visit our website and click on the WhatsApp button to contact our support team. Provide your details and your ID will be generated in under 60 seconds."
     },
     {
-      question: "How do I create a Reddy Anna ID?",
-      answer: "Visit reddypurplebook.in, click the WhatsApp button, and contact our official agent. Share your preferred username and password. Your ID is created and delivered in under 60 seconds."
+      question: "How to login?",
+      answer: "Once your ID is created, you will receive a secure username and password on WhatsApp. Go to the official login link provided and enter your credentials."
     },
     {
-      question: "Is Reddy Anna safe and legitimate?",
-      answer: "Yes. Reddy Anna has operated safely since 2010, serving millions of verified users across India. All transactions are encrypted, all payments are processed through secure Indian banking channels, and all payouts are guaranteed. reddypurplebook.in is the only official Reddy Anna domain — always verify you are on the right site."
+      question: "How to deposit money?",
+      answer: "You can deposit using UPI (PhonePe, GPay, Paytm) or Bank Transfer directly through our customer support on WhatsApp for instant balance update."
     },
     {
-      question: "What payment methods does Reddy Anna accept?",
-      answer: "We accept all major Indian payment methods: UPI (PhonePe, Google Pay, BHIM), Paytm, Paytm Wallet, Net Banking, NEFT, and IMPS. Deposits are instant. Withdrawals are processed within 2-4 hours."
+      question: "How to withdraw?",
+      answer: "Send a withdrawal request to our 24/7 WhatsApp support with your ID and amount. Funds will be credited to your linked bank or UPI within 2-4 hours."
     },
     {
-      question: "Can I bet on IPL using Reddy Anna?",
-      answer: "Absolutely. IPL betting is one of Reddy Anna's core offerings. We provide live, real-time odds on every IPL match with ball-by-ball markets, session betting, player performance bets, and full pre-match markets. Your Reddy Anna ID gives you instant access to all IPL 2026 markets."
+      question: "Is betting safe?",
+      answer: "Yes, Reddy Anna is India's most trusted and certified betting exchange platform since 2010. We offer 100% secure transactions and complete data privacy."
     },
     {
-      question: "Does Reddy Anna offer casino games?",
-      answer: "Yes. reddypurplebook.in offers a comprehensive live casino section featuring Teen Patti, Andar Bahar, Roulette, Blackjack, Baccarat, Poker, Dragon Tiger, and hundreds of slots. All games run 24/7 with live dealers and certified fair-play mechanisms."
+      question: "What games are available?",
+      answer: "We offer sports betting on Cricket (IPL, World Cup, etc.), Football, Tennis, as well as live casino games like Teen Patti, Andar Bahar, Roulette, and Aviator."
     },
     {
-      question: "How can I contact Reddy Anna support?",
-      answer: "Our support team is available 24/7 via WhatsApp and Telegram. Visit reddypurplebook.in and click the WhatsApp icon for instant connection to our support team. Average response time is under 2 minutes, even during live matches."
+      question: "Can I use UPI?",
+      answer: "Absolutely. We support all major Indian UPI platforms including PhonePe, Google Pay, Paytm, and BHIM for seamless deposits and withdrawals."
     },
     {
-      question: "What is a Reddy Anna Demo ID?",
-      answer: "A Demo ID is a free practice account that lets you explore the Reddy Anna platform, understand how betting markets work, and place practice bets without using real money. Contact our agent via WhatsApp and request a Demo ID — it is completely free."
+      question: "How long does approval take?",
+      answer: "Our automated system ensures that both account creation and deposits are approved instantly within 60 seconds."
     }
+  ],
+
+  reviews: [
+    { name: "John Doe", rating: 5, text: "Got my ID within 5 minutes. Very fast service and great support." },
+    { name: "Jane Smith", rating: 5, text: "Withdrawal received quickly. Highly recommended platform for IPL betting." },
+    { name: "Michael Brown", rating: 5, text: "Best support team. They guided me well through the deposit process." },
+    { name: "Rahul Singh", rating: 5, text: "Been playing for 2 years, never faced any issue with payouts." }
   ]
 };
