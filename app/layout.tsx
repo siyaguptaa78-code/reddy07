@@ -8,9 +8,9 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   metadataBase: new URL("https://reddybookie.site"),
   applicationName: "Reddy Anna Book",
-  title: "Reddy Anna | Reddy Anna Book | Best Betting Id Provider",
+  title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
   description:
-    "Get your Reddy Anna Book ID instantly. Enjoy cricket IPL betting, casino games, & secure platform. Join India's trusted betting hub today",
+    "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
   keywords: [
     "Reddy Anna",
     "Reddy Anna Book",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     google: "CiZXOM8u4QShR7knoNIKpKW7cQTii7q8P7T8s_WV7ls"
   },
   openGraph: {
-    title: "Reddy Anna | Reddy Anna Book | Best Betting Id Provider",
+    title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
     description:
-      "Get your Reddy Anna Book ID instantly. Enjoy cricket IPL betting, casino games, & secure platform. Join India's trusted betting hub today",
+      "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
     url: "https://reddybookie.site",
     siteName: "Reddy Anna Book",
     images: [
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reddy Anna | Reddy Anna Book | Best Betting Id Provider",
+    title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
     description:
-      "Get your Reddy Anna Book ID instantly. Enjoy cricket IPL betting, casino games, & secure platform. Join India's trusted betting hub today",
+      "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
     images: [
       "https://reddybookwinin.in/wp-content/uploads/elementor/thumbs/cricket-bg-rlghoi9i0hsj2n8qphq7tivs3mol4s3iin7qqytzxc.webp"
     ]

@@ -65,6 +65,13 @@ export default function HomePage() {
       {/* 3. Why Choose Reddy Anna (Cards) */}
       <section className="w-full py-12 px-4 max-w-7xl mx-auto">
         <h2 className="text-3xl font-black text-center mb-8 uppercase text-white tracking-wide">Why Choose <span className="text-[#00ccff]">Reddy Anna</span></h2>
+        
+        <div className="max-w-4xl mx-auto text-gray-300 text-center mb-10 text-sm md:text-base leading-relaxed">
+          <p>
+            Reddy Anna offers a smooth, user-friendly platform designed for sports enthusiasts seeking a reliable online experience. With an easy-to-navigate interface, fast performance, and compatibility across desktop and mobile devices, users can access their accounts conveniently anytime. The platform focuses on security, responsive customer support, and a seamless experience to ensure user satisfaction. Regular updates and continuous improvements help maintain stability and performance. Whether you're new or returning, Reddy Anna provides a convenient way to stay connected with live sports, making it a dependable choice for those who value speed, accessibility, and a hassle-free online experience.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <a href={CONFIG.whatsappUrl} className="relative group overflow-hidden rounded-3xl border border-white/10 hover:border-[#00ccff]/50 transition-all cursor-pointer bg-gradient-to-br from-[#1a2233] to-[#0c1322] aspect-[2/1] md:aspect-[5/2]">
             <div className="absolute inset-0 bg-black/40 z-10"></div>
@@ -248,23 +255,65 @@ export default function HomePage() {
 
       {/* 9. How to section */}
       <section className="w-full py-16 px-4 max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-black uppercase text-center text-white tracking-wide mb-10">How to Create Your Reddy Anna Account</h2>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-           {[
-             { step: "Step One", title: "Visit Website", desc: "Go to reddypurplebook.in or click WhatsApp", icon: "🌐" },
-             { step: "Step Two", title: "Message Us", desc: "Send a message asking for a new ID", icon: "💬" },
-             { step: "Step Three", title: "Deposit", desc: "Make your first minimum deposit via UPI", icon: "💳" },
-             { step: "Completed", title: "Start Betting", desc: "Get credentials instantly and start playing!", icon: "👍" }
-           ].map((item, i) => (
-             <div key={i} className="bg-[#0c1322] border border-white/10 hover:border-[#00ccff]/30 rounded-3xl p-8 flex flex-col items-center text-center gap-4 transition-all hover:bg-[#1a2233]">
-               <div className="w-16 h-16 bg-[#0055ff] rounded-full flex items-center justify-center text-2xl shadow-lg shadow-blue-500/30">
-                 {item.icon}
-               </div>
-               <h3 className="font-black text-lg text-white">{item.step}</h3>
-               <h4 className="font-bold text-[#00ccff] text-sm">{item.title}</h4>
-               <p className="text-gray-400 text-xs font-semibold">{item.desc}</p>
+        <h2 className="text-3xl md:text-4xl font-black uppercase text-center text-white tracking-wide mb-6">How to Create Your Reddy Anna Account</h2>
+        <p className="text-gray-300 text-center max-w-3xl mx-auto mb-10">
+          Creating your Reddy Anna ID is a simple process designed to get you started quickly. Follow these easy steps:
+        </p>
+
+        <div className="flex flex-col gap-6 max-w-4xl mx-auto">
+          <div className="bg-[#0c1322] border border-white/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start hover:bg-[#1a2233] transition-all">
+             <div className="min-w-16 h-16 bg-[#0055ff] rounded-full flex items-center justify-center text-2xl shadow-lg shadow-blue-500/30 shrink-0">
+               🎧
              </div>
-           ))}
+             <div>
+               <h3 className="font-black text-xl text-white mb-2">Step 1: Connect with Our Support Team</h3>
+               <p className="text-gray-400 text-sm md:text-base">
+                 Click the "Get Reddy Anna ID" button or send a message through our official WhatsApp or Telegram channel to begin the registration process.
+               </p>
+             </div>
+          </div>
+          <div className="bg-[#0c1322] border border-white/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start hover:bg-[#1a2233] transition-all">
+             <div className="min-w-16 h-16 bg-[#00ccff] text-black rounded-full flex items-center justify-center text-2xl shadow-lg shadow-cyan-500/30 shrink-0">
+               📝
+             </div>
+             <div>
+               <h3 className="font-black text-xl text-white mb-2">Step 2: Provide Your Details</h3>
+               <p className="text-gray-400 text-sm md:text-base mb-2">Share a few basic details, such as:</p>
+               <ul className="list-disc list-inside text-gray-400 text-sm md:text-base mb-2 space-y-1">
+                 <li>Your name or preferred username</li>
+                 <li>Your preferred platform (if applicable)</li>
+                 <li>Mobile number (when required)</li>
+               </ul>
+               <p className="text-gray-400 text-sm md:text-base">
+                 The process is straightforward, with no lengthy paperwork or complicated registration forms.
+               </p>
+             </div>
+          </div>
+          <div className="bg-[#0c1322] border border-white/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start hover:bg-[#1a2233] transition-all">
+             <div className="min-w-16 h-16 bg-[#ffcc00] text-black rounded-full flex items-center justify-center text-2xl shadow-lg shadow-yellow-500/30 shrink-0">
+               ⚙️
+             </div>
+             <div>
+               <h3 className="font-black text-xl text-white mb-2">Step 3: Account Setup</h3>
+               <p className="text-gray-400 text-sm md:text-base">
+                 Once your details are confirmed, our support team will create your Reddy Anna ID and prepare your account for access.
+               </p>
+             </div>
+          </div>
+          <div className="bg-[#0c1322] border border-white/10 rounded-3xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start hover:bg-[#1a2233] transition-all">
+             <div className="min-w-16 h-16 bg-[#25D366] text-black rounded-full flex items-center justify-center text-2xl shadow-lg shadow-green-500/30 shrink-0">
+               ✅
+             </div>
+             <div>
+               <h3 className="font-black text-xl text-white mb-2">Step 4: Receive Your Login Information</h3>
+               <p className="text-gray-400 text-sm md:text-base mb-2">
+                 Your login credentials, including your Reddy Anna ID and password, will be shared securely through WhatsApp or Telegram, allowing you to access your account immediately.
+               </p>
+               <p className="text-gray-400 text-sm md:text-base">
+                 If you're new to the platform, you can also request a <strong className="text-white">Reddy Anna Demo ID</strong> to explore the features and familiarise yourself with the platform before using your main account.
+               </p>
+             </div>
+          </div>
         </div>
       </section>
 
@@ -285,6 +334,36 @@ export default function HomePage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 10.5 About Reddy Anna */}
+      <section className="w-full py-16 px-4 max-w-5xl mx-auto text-gray-300">
+        <div className="bg-[#0c1322] border border-[#00ccff]/20 rounded-3xl p-8 md:p-12 shadow-2xl">
+          <h2 className="text-3xl font-black uppercase text-[#00ccff] mb-2">What is Reddy Anna?</h2>
+          <h3 className="text-xl font-bold text-white mb-6">A Popular Online Sports Platform in India</h3>
+          
+          <div className="space-y-4 text-sm md:text-base leading-relaxed mb-10">
+            <p>
+              Reddy Anna is an online platform that provides users with access to sports-related services through dedicated account IDs. Since its launch, the platform has focused on delivering a fast, reliable, and user-friendly experience for people interested in following live sporting events. Users can obtain a Reddy Anna ID through the official support channels and access a range of platform features designed for convenience and ease of use.
+            </p>
+            <p>
+              The platform offers different types of account IDs, including Reddy Anna ID, Demo ID, Cricket ID, IPL ID, Sports Exchange ID, and Casino ID, helping users choose the option that best suits their requirements. With a simple registration process, responsive customer support, and quick account activation, Reddy Anna aims to make onboarding straightforward for both new and returning users.
+            </p>
+            <p>
+              Users can access live sports updates, multiple event categories, and a streamlined interface across desktop and mobile devices. The platform is designed with an emphasis on performance, accessibility, and customer assistance to provide a smooth overall experience.
+            </p>
+          </div>
+
+          <h2 className="text-2xl font-black uppercase text-white mb-6">Is Reddy Anna Safe?</h2>
+          <div className="space-y-4 text-sm md:text-base leading-relaxed">
+            <p>
+              Reddy Anna states that it prioritises user privacy and account security by implementing modern security practices and secure account management. Users should always register through the official communication channels to help protect their account information and avoid unauthorised sources.
+            </p>
+            <p>
+              Before creating an account or using any online platform, users should independently verify its licensing, legal status, and terms of service in their jurisdiction, as regulations may vary by location.
+            </p>
           </div>
         </div>
       </section>
