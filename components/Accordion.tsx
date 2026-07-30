@@ -19,7 +19,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
   };
 
   return (
-    <div className="w-full flex flex-col gap-4 text-left select-none">
+    <div className="w-full flex flex-col gap-4 text-left">
       {items.map((item, idx) => {
         const isOpen = openIndex === idx;
         return (
@@ -27,11 +27,11 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
             key={idx}
             className="border border-[#9C27B0]/10 rounded-2xl overflow-hidden bg-[#0c1322] shadow-[0_4px_20px_rgba(240,144,26,0.04)]"
           >
-            <button
+            <div
               onClick={() => toggleItem(idx)}
-              className="w-full flex items-center justify-between p-5 text-left font-bold text-base md:text-lg text-white hover:text-amber-300 transition-colors duration-200"
+              className="w-full cursor-pointer flex items-center justify-between p-5 text-left font-bold text-base md:text-lg text-white hover:text-amber-300 transition-colors duration-200"
             >
-              <span>{item.question}</span>
+              <span className="select-text">{item.question}</span>
               <span className="text-[#9C27B0] transition-transform duration-350">
                 {isOpen ? (
                   // Expanded icon: Angle double down SVG
@@ -55,7 +55,7 @@ export const Accordion: React.FC<AccordionProps> = ({ items }) => {
                   </svg>
                 )}
               </span>
-            </button>
+            </div>
 
             {/* Smooth height transition wrapper */}
             <div
