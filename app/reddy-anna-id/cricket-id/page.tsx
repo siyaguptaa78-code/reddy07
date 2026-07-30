@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "Cricket Betting ID | Official Reddy Anna Cricket ID | Instant Delivery",
-  description: "Get your official Reddy Anna Cricket Betting ID instantly via WhatsApp.",
+  title: "Cricket Betting ID | Get Your Reddy Anna Cricket ID Today",
+  description: "Apply for a verified Reddy Anna Cricket ID to enjoy live cricket betting, IPL betting, international matches, and fast account activation.",
   alternates: { canonical: "https://reddybookie.site/reddy-anna-id/cricket-id" },
 };
 
@@ -46,19 +46,19 @@ export default function CricketIdPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  title: "Pre-Match Markets",
+                  title: "Cricket Betting ID | Get Your Reddy Anna Cricket ID Today",
                   desc: "Place your bets on Match Winner, Top Batsman, Top Bowler, Total Sixes, and First Over Runs well before the game starts with competitive odds."
                 },
                 {
-                  title: "Live Session Betting",
+                  title: "Cricket Betting ID | Get Your Reddy Anna Cricket ID Today",
                   desc: "Wager live on active sessions (e.g. 6-overs, 10-overs runs), player-by-player runs, ball-by-ball events, and live fall of wickets."
                 },
                 {
-                  title: "Betting Exchange",
+                  title: "Cricket Betting ID | Get Your Reddy Anna Cricket ID Today",
                   desc: "Utilize backing and laying models on our Tiger and Sky Exchange environments to lock in profits by trading live cricket odds."
                 },
                 {
-                  title: "IPL Special Promotions",
+                  title: "Cricket Betting ID | Get Your Reddy Anna Cricket ID Today",
                   desc: "Get reload match cashbacks, daily free betting tokens, and special tournament leadership board multipliers."
                 }
               ].map((mkt, idx) => (

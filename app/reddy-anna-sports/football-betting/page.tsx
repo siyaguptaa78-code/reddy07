@@ -5,8 +5,8 @@ import { ConicButton } from "@/components/ConicButton";
 import { MatchList } from "@/components/MatchList";
 
 export const metadata: Metadata = {
-  title: "Football Betting Online | Live Odds | Reddy Anna Book",
-  description: "Bet on Premier League and international football with best live odds on Reddy Anna Book.",
+  title: "Football Betting in India | Live Football Betting Online",
+  description: "Bet on Premier League, La Liga, Champions League, FIFA tournaments, and more with live football betting and competitive odds.",
   alternates: { canonical: "https://reddybookie.site/reddy-anna-sports/football-betting" },
 };
 

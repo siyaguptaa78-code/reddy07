@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "Indian Card Games | Teen Patti and Andar Bahar | Reddy Anna Book",
-  description: "Play Teen Patti, Andar Bahar and more Indian card games on Reddy Anna Book with live dealers.",
+  title: "Indian Card Games Online | Play Popular Card Games",
+  description: "Discover popular Indian card games including Teen Patti, Andar Bahar, Rummy, and more. Enjoy exciting gameplay and secure online betting.",
   alternates: { canonical: "https://reddybookie.site/indian-card-games" },
 };
 
@@ -43,15 +43,15 @@ export default function IndianCardGamesPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Teen Patti Live",
+                  title: "Indian Card Games Online | Play Popular Card Games",
                   desc: "India's beloved 3-card game. Bet on players, dealers, pairs, or premium side bets with live video streams."
                 },
                 {
-                  title: "Andar Bahar Live",
+                  title: "Indian Card Games Online | Play Popular Card Games",
                   desc: "Simple, fast, and highly exciting. Wager on whether the matching card lands on the Andar or Bahar side."
                 },
                 {
-                  title: "Muflis Teen Patti",
+                  title: "Indian Card Games Online | Play Popular Card Games",
                   desc: "A custom twist on Teen Patti where the lowest-ranking card combination wins. Extremely popular among card game fans."
                 }
               ].map((game, idx) => (

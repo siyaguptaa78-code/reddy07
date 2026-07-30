@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "About Us | Reddy Anna Book",
-  description: "Learn about Reddy Anna Book - India's trusted cricket betting ID platform. Instant ID delivery and 24/7 WhatsApp support.",
+  title: "About Reddy Bookie | Trusted Online Betting Platform in India",
+  description: "Learn about Reddy Bookie, our mission, and why thousands of Indian users trust us for cricket betting, casino games, and secure online betting services.",
   alternates: { canonical: "https://reddybookie.site/about-us" },
 };
 
@@ -46,15 +46,15 @@ export default function AboutUsPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Absolute Payout Guarantee",
+                  title: "About Reddy Bookie | Trusted Online Betting Platform in India",
                   desc: "We process every single legit payout without delays. Winnings are processed fee-free inside 2-4 hours, 24 hours a day, 365 days a year."
                 },
                 {
-                  title: "India-First Ecosystem",
+                  title: "About Reddy Bookie | Trusted Online Betting Platform in India",
                   desc: "Built exclusively for the Indian bettor, supporting standard Indian banking networks, local payment apps, and localized customer support."
                 },
                 {
-                  title: "Transparency & Security",
+                  title: "About Reddy Bookie | Trusted Online Betting Platform in India",
                   desc: "All transactions are fully SSL encrypted. All slots and casino systems operate on certified fair random-number-generator (RNG) cards."
                 }
               ].map((val, idx) => (

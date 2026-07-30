@@ -1,8 +1,15 @@
+import { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 import { CONFIG } from "@/utils/config";
+
+
+export const metadata: Metadata = {
+  title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
+  description: "Explore the latest betting tips, cricket predictions, casino strategies, IPL updates, and expert insights to improve your online betting experience.",
+};
 
 export default function BlogsPage() {
   return (
@@ -32,28 +39,28 @@ export default function BlogsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  title: "U19 Asia Cup 2026: Dates, Teams, Schedule & Everything About the Under-19 Asia Cup",
+                  title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
                   date: "July 8, 2026",
                   desc: "The U19 Asia Cup 2026 is expected in October. Defending champions Pakistan, expected teams, format, past winners, last edition's recap and how to watch — all in one place.",
                   slug: "u19-asia-cup-2026"
                 },
                 {
-                  title: "How to Wager on IPL 2026 Live Sessions",
+                  title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
                   date: "May 24, 2026",
                   desc: "Learn session betting strategies (6-over, 10-over runs), player outcome props, and ball-by-ball hedging systems to manage risks and lock in profits during active matches."
                 },
                 {
-                  title: "Understanding Betting Exchanges: Lay & Back Model",
+                  title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
                   date: "May 20, 2026",
                   desc: "A beginner's guide to trading live cricket odds on Reddy Anna Tiger & Sky Exchanges. Understand what backing and laying means, and how to operate like a bookmaker."
                 },
                 {
-                  title: "How to Instantly Claim & Use Your Welcome Bonus",
+                  title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
                   date: "May 15, 2026",
                   desc: "Get details on how to set up your verified ID via WhatsApp, deposit starting at just ₹100, and claim your welcome bonus package to play risk-free."
                 },
                 {
-                  title: "Top 5 Live Casino Games to Explore in India",
+                  title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
                   date: "May 10, 2026",
                   desc: "An extensive review of local live dealer card games including Teen Patti, Andar Bahar, Muflis, and Dragon Tiger. Find out about RNG fair-play mechanisms."
                 }

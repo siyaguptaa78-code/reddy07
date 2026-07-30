@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "Login | Reddy Anna Book",
-  robots: { index: false, follow: false },
+  title: "Reddy Bookie Login | Secure Betting Account Access",
+  description: "Log in to your Reddy Bookie account securely to access live betting, casino games, account management, and betting history.",
 };
 
 export default function LoginPage() {

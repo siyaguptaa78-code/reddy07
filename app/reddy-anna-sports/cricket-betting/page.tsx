@@ -5,8 +5,8 @@ import { ConicButton } from "@/components/ConicButton";
 import { MatchList } from "@/components/MatchList";
 
 export const metadata: Metadata = {
-  title: "Cricket Betting Online | Live IPL Odds | Reddy Anna Book",
-  description: "Bet on live cricket with best IPL odds and instant payouts on Reddy Anna Book.",
+  title: "Cricket Betting in India | Live Cricket Betting Guide",
+  description: "Enjoy live cricket betting with competitive odds on IPL, T20, ODI, Test matches, and international tournaments through Reddy Bookie.",
   alternates: { canonical: "https://reddybookie.site/reddy-anna-sports/cricket-betting" },
 };
 

@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "Horse Racing Betting | Live Odds | Reddy Anna Book",
-  description: "Bet on live horse racing events with competitive odds on Reddy Anna Book.",
+  title: "Horse Racing Betting | Online Horse Race Betting India",
+  description: "Experience online horse racing betting with live race markets, competitive odds, secure betting options, and quick payouts on Reddy Bookie.",
   alternates: { canonical: "https://reddybookie.site/reddy-anna-sports/horse-racing" },
 };
 

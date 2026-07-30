@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "IPL Betting ID | Official Reddy Anna IPL ID",
-  description: "Get your official Reddy Anna IPL Betting ID and bet on every IPL match live.",
+  title: "IPL Betting ID | Instant Reddy Anna IPL ID Registration",
+  description: "Get your IPL Betting ID instantly with Reddy Anna. Bet on IPL matches, enjoy competitive odds, secure transactions, and fast account approval.",
   alternates: { canonical: "https://reddybookie.site/reddy-anna-id/ipl-betting-id" },
 };
 
@@ -46,19 +46,19 @@ export default function IplBettingIdPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  title: "High Liquidity Exchange",
+                  title: "IPL Betting ID | Instant Reddy Anna IPL ID Registration",
                   desc: "Trade live odds on the biggest matches with thousands of active players on our peer-to-peer exchanges."
                 },
                 {
-                  title: "Daily Match Promos",
+                  title: "IPL Betting ID | Instant Reddy Anna IPL ID Registration",
                   desc: "Claim special reload match cashbacks, leadership board bonuses, and daily free-bet coupons throughout the season."
                 },
                 {
-                  title: "Fast Payouts",
+                  title: "IPL Betting ID | Instant Reddy Anna IPL ID Registration",
                   desc: "Request a withdrawal for your IPL winnings and see the funds hit your bank account inside 2-4 hours, without any processing fees."
                 },
                 {
-                  title: "24/7 VIP Support",
+                  title: "IPL Betting ID | Instant Reddy Anna IPL ID Registration",
                   desc: "Access dedicated support agents via WhatsApp and Telegram for instant deposits, account setup, and queries."
                 }
               ].map((item, idx) => (

@@ -4,8 +4,8 @@ import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 
 export const metadata: Metadata = {
-  title: "Register | Reddy Anna Book",
-  robots: { index: false, follow: false },
+  title: "Register at Reddy Bookie | Create Your Betting Account",
+  description: "Register your Reddy Bookie account in minutes. Get started with online cricket betting, casino games, live sports betting, and exclusive offers.",
 };
 
 export default function RegisterPage() {

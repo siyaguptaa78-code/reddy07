@@ -5,8 +5,8 @@ import { ConicButton } from "@/components/ConicButton";
 import { MatchList } from "@/components/MatchList";
 
 export const metadata: Metadata = {
-  title: "Tennis Betting Online | Live Grand Slam Odds | Reddy Anna Book",
-  description: "Bet on Wimbledon, US Open and ATP matches with Reddy Anna Book.",
+  title: "Tennis Betting Online | Live Tennis Betting in India",
+  description: "Bet on ATP, WTA, Grand Slam, Davis Cup, and other tennis events with live odds, secure betting, and quick settlements.",
   alternates: { canonical: "https://reddybookie.site/reddy-anna-sports/tennis-betting" },
 };
 

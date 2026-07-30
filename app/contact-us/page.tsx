@@ -5,8 +5,8 @@ import { ConicButton } from "@/components/ConicButton";
 import { CONFIG } from "@/utils/config";
 
 export const metadata: Metadata = {
-  title: "Contact Us | 24/7 WhatsApp Support | Reddy Anna Book",
-  description: "Get instant help from Reddy Anna Book support 24/7 via WhatsApp for ID creation, deposits and betting queries.",
+  title: "Contact Reddy Bookie | Get Support & Betting Assistance",
+  description: "Contact the Reddy Bookie support team for account help, betting ID assistance, registration support, and quick answers to your questions.",
   alternates: { canonical: "https://reddybookie.site/contact-us" },
 };
 

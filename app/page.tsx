@@ -1,9 +1,16 @@
+import { Metadata } from "next";
 import React from "react";
 import { CONFIG } from "@/utils/config";
 import { Accordion } from "@/components/Accordion";
 import { ConicButton } from "@/components/ConicButton";
 import { MatchList } from "@/components/MatchList";
 import { FloatingButtons } from "@/components/FloatingButtons";
+
+
+export const metadata: Metadata = {
+  title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
+  description: "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
+};
 
 export default function HomePage() {
   return (
