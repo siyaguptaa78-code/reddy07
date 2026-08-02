@@ -1,0 +1,82 @@
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "@id":"https://reddybookie.site/#faq",
+  "mainEntity":[
+
+    {
+      "@type":"Question",
+      "name":"How to get Reddy Anna ID?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Visit our website and click the WhatsApp button to contact our support team. Share your basic details and your Reddy Anna ID is usually created within 60 seconds."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"How to login?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"After your account is created, you will receive your username and password on WhatsApp. Open the official login link provided by our team and sign in using your credentials."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"How to deposit money?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Deposits can be made through UPI services such as PhonePe, Google Pay, Paytm or by bank transfer. Once payment is confirmed by our WhatsApp support team, your account balance is updated."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"How to withdraw?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Send your withdrawal request through WhatsApp with your betting ID and withdrawal amount. Funds are transferred to your registered UPI ID or bank account, generally within 2 to 4 hours."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Is betting safe?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Reddy Anna uses secure connections and encrypted transactions to help protect user accounts and payment information while maintaining user privacy."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"What games are available?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Users can enjoy cricket betting, football betting, tennis, live casino games, Teen Patti, Andar Bahar, Roulette, Aviator and several other online gaming options."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"Can I use UPI?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes. We support popular UPI payment platforms including PhonePe, Google Pay, Paytm and BHIM for quick deposits and withdrawals."
+      }
+    },
+
+    {
+      "@type":"Question",
+      "name":"How long does approval take?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Account creation and deposit approvals are generally completed within 60 seconds, allowing users to begin betting almost immediately."
+      }
+    }
+
+  ]
+}
+</script>

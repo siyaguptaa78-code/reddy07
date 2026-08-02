@@ -94,6 +94,7 @@ export default function RootLayout({
             __html: `{
   "@context":"https://schema.org",
   "@graph":[
+
     {
       "@type":"Organization",
       "@id":"https://reddybookie.site/#organization",
@@ -117,6 +118,7 @@ export default function RootLayout({
         ]
       }
     },
+
     {
       "@type":"WebSite",
       "@id":"https://reddybookie.site/#website",
@@ -132,6 +134,7 @@ export default function RootLayout({
         "query-input":"required name=search_term_string"
       }
     },
+
     {
       "@type":"WebPage",
       "@id":"https://reddybookie.site/#webpage",
@@ -152,6 +155,7 @@ export default function RootLayout({
       },
       "inLanguage":"en-IN"
     },
+
     {
       "@type":"ImageObject",
       "@id":"https://reddybookie.site/#logo",
@@ -159,6 +163,7 @@ export default function RootLayout({
       "contentUrl":"https://reddybookwinin.in/wp-content/uploads/2025/06/image-659e7b71ad644.webp",
       "caption":"Reddy Anna"
     },
+
     {
       "@type":"BreadcrumbList",
       "@id":"https://reddybookie.site/#breadcrumb",
@@ -171,6 +176,7 @@ export default function RootLayout({
         }
       ]
     },
+
     {
       "@type":"Service",
       "@id":"https://reddybookie.site/#service",
@@ -202,6 +208,7 @@ export default function RootLayout({
         ]
       }
     },
+
     {
       "@type":"RegisterAction",
       "@id":"https://reddybookie.site/#register",
@@ -222,6 +229,7 @@ export default function RootLayout({
         "name":"Reddy Anna Betting ID"
       }
     }
+
   ]
 }`
           }}
@@ -234,6 +242,7 @@ export default function RootLayout({
   "@type":"FAQPage",
   "@id":"https://reddybookie.site/#faq",
   "mainEntity":[
+
     {
       "@type":"Question",
       "name":"How to get Reddy Anna ID?",
@@ -242,6 +251,7 @@ export default function RootLayout({
         "text":"Visit our website and click the WhatsApp button to contact our support team. Share your basic details and your Reddy Anna ID is usually created within 60 seconds."
       }
     },
+
     {
       "@type":"Question",
       "name":"How to login?",
@@ -250,6 +260,7 @@ export default function RootLayout({
         "text":"After your account is created, you will receive your username and password on WhatsApp. Open the official login link provided by our team and sign in using your credentials."
       }
     },
+
     {
       "@type":"Question",
       "name":"How to deposit money?",
@@ -258,6 +269,7 @@ export default function RootLayout({
         "text":"Deposits can be made through UPI services such as PhonePe, Google Pay, Paytm or by bank transfer. Once payment is confirmed by our WhatsApp support team, your account balance is updated."
       }
     },
+
     {
       "@type":"Question",
       "name":"How to withdraw?",
@@ -266,6 +278,7 @@ export default function RootLayout({
         "text":"Send your withdrawal request through WhatsApp with your betting ID and withdrawal amount. Funds are transferred to your registered UPI ID or bank account, generally within 2 to 4 hours."
       }
     },
+
     {
       "@type":"Question",
       "name":"Is betting safe?",
@@ -274,6 +287,7 @@ export default function RootLayout({
         "text":"Reddy Anna uses secure connections and encrypted transactions to help protect user accounts and payment information while maintaining user privacy."
       }
     },
+
     {
       "@type":"Question",
       "name":"What games are available?",
@@ -282,6 +296,7 @@ export default function RootLayout({
         "text":"Users can enjoy cricket betting, football betting, tennis, live casino games, Teen Patti, Andar Bahar, Roulette, Aviator and several other online gaming options."
       }
     },
+
     {
       "@type":"Question",
       "name":"Can I use UPI?",
@@ -290,6 +305,7 @@ export default function RootLayout({
         "text":"Yes. We support popular UPI payment platforms including PhonePe, Google Pay, Paytm and BHIM for quick deposits and withdrawals."
       }
     },
+
     {
       "@type":"Question",
       "name":"How long does approval take?",
@@ -298,6 +314,7 @@ export default function RootLayout({
         "text":"Account creation and deposit approvals are generally completed within 60 seconds, allowing users to begin betting almost immediately."
       }
     }
+
   ]
 }`
           }}
