@@ -50,15 +50,15 @@ export default function DemoIdPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "Demo Betting ID | Try Reddy Anna Demo Account",
+                  title: "Practice IPL Betting",
                   desc: "Learn session bets, ball-by-ball markets, match winners, and prop bets during active IPL live events."
                 },
                 {
-                  title: "Demo Betting ID | Try Reddy Anna Demo Account",
+                  title: "Explore Live Casino",
                   desc: "Explore card games like Teen Patti, Andar Bahar, Roulette, and Blackjack tables before placing actual stakes."
                 },
                 {
-                  title: "Demo Betting ID | Try Reddy Anna Demo Account",
+                  title: "Test Betting Strategies",
                   desc: "Test backing and laying outcomes on the Reddy Anna Tiger and Sky Exchange environments risk-free."
                 }
               ].map((feat, idx) => (
@@ -80,9 +80,9 @@ export default function DemoIdPage() {
             </p>
             <div className="flex flex-col md:flex-row gap-4 mt-2">
               {[
-                { step: "1", title: "Demo Betting ID | Try Reddy Anna Demo Account", desc: "Click the floating WhatsApp or Conic Buttons to connect with an official agent." },
-                { step: "2", title: "Demo Betting ID | Try Reddy Anna Demo Account"Demo ID'", desc: "Send a message saying 'Demo ID'. Our 24/7 support will respond instantly." },
-                { step: "3", title: "Demo Betting ID | Try Reddy Anna Demo Account", desc: "You will receive a trial username and secure password with 10k virtual points." }
+                { step: "1", title: "Click WhatsApp", desc: "Click the floating WhatsApp or Conic Buttons to connect with an official agent." },
+                { step: "2", title: "Request 'Demo ID'", desc: "Send a message saying 'Demo ID'. Our 24/7 support will respond instantly." },
+                { step: "3", title: "Get Practice Credentials", desc: "You will receive a trial username and secure password with 10k virtual points." }
               ].map((step, idx) => (
                 <div key={idx} className="flex-1 bg-[#05080f] p-5 rounded-sm border border-[#9C27B0]/5 flex flex-col items-center text-center gap-2">
                   <span className="w-8 h-8 rounded-sm bg-gradient-to-r from-[#FF4081] to-[#9C27B0] text-black font-black flex items-center justify-center text-sm shadow-md">

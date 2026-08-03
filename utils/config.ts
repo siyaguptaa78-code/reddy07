@@ -152,35 +152,35 @@ export const CONFIG = {
   faqs: [
     {
       question: "How to get Reddy Anna ID?",
-      answer: "Visit our website and click on the WhatsApp button to contact our support team. Provide your details and your ID will be generated in under 60 seconds."
+      answer: "Visit our website and click the WhatsApp button to contact our support team. Share your basic details and your Reddy Anna ID is usually created within 60 seconds."
     },
     {
       question: "How to login?",
-      answer: "Once your ID is created, you will receive a secure username and password on WhatsApp. Go to the official login link provided and enter your credentials."
+      answer: "After your account is created, you will receive your username and password on WhatsApp. Open the official login link provided by our team and sign in using your credentials."
     },
     {
       question: "How to deposit money?",
-      answer: "You can deposit using UPI (PhonePe, GPay, Paytm) or Bank Transfer directly through our customer support on WhatsApp for instant balance update."
+      answer: "Deposits can be made through UPI services such as PhonePe, Google Pay, Paytm or by bank transfer. Once payment is confirmed by our WhatsApp support team, your account balance is updated."
     },
     {
       question: "How to withdraw?",
-      answer: "Send a withdrawal request to our 24/7 WhatsApp support with your ID and amount. Funds will be credited to your linked bank or UPI within 2-4 hours."
+      answer: "Send your withdrawal request through WhatsApp with your betting ID and withdrawal amount. Funds are transferred to your registered UPI ID or bank account, generally within 2 to 4 hours."
     },
     {
       question: "Is betting safe?",
-      answer: "Yes, Reddy Anna is India's most trusted and certified betting exchange platform since 2010. We offer 100% secure transactions and complete data privacy."
+      answer: "Reddy Anna uses secure connections and encrypted transactions to help protect user accounts and payment information while maintaining user privacy."
     },
     {
       question: "What games are available?",
-      answer: "We offer sports betting on Cricket (IPL, World Cup, etc.), Football, Tennis, as well as live casino games like Teen Patti, Andar Bahar, Roulette, and Aviator."
+      answer: "Users can enjoy cricket betting, football betting, tennis, live casino games, Teen Patti, Andar Bahar, Roulette, Aviator and several other online gaming options."
     },
     {
       question: "Can I use UPI?",
-      answer: "Absolutely. We support all major Indian UPI platforms including PhonePe, Google Pay, Paytm, and BHIM for seamless deposits and withdrawals."
+      answer: "Yes. We support popular UPI payment platforms including PhonePe, Google Pay, Paytm and BHIM for quick deposits and withdrawals."
     },
     {
       question: "How long does approval take?",
-      answer: "Our automated system ensures that both account creation and deposits are approved instantly within 60 seconds."
+      answer: "Account creation and deposit approvals are generally completed within 60 seconds, allowing users to begin betting almost immediately."
     }
   ],
 
