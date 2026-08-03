@@ -8,7 +8,7 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 export const metadata: Metadata = {
   metadataBase: new URL("https://reddybookie.site"),
   applicationName: "Reddy Anna Book",
-  title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
+  title: "Reddy Anna | Live Cricket Betting ID and Online Sports Platform",
   description:
     "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
   keywords: [
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     google: "CiZXOM8u4QShR7knoNIKpKW7cQTii7q8P7T8s_WV7ls"
   },
   openGraph: {
-    title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
+    title: "Reddy Anna | Live Cricket Betting ID and Online Sports Platform",
     description:
       "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
     url: "https://reddybookie.site",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
+    title: "Reddy Anna | Live Cricket Betting ID and Online Sports Platform",
     description:
       "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
     images: [
@@ -136,7 +136,7 @@ export default function RootLayout({
       "@type":"WebPage",
       "@id":"https://reddybookie.site/#webpage",
       "url":"https://reddybookie.site/",
-      "name":"Reddy Anna | Live Cricket Betting ID & Online Sports Platform",
+      "name":"Reddy Anna | Live Cricket Betting ID and Online Sports Platform",
       "description":"Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
       "isPartOf":{
         "@id":"https://reddybookie.site/#website"
