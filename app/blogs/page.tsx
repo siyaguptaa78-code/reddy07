@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
-import { Sidebar } from "@/components/Sidebar";
 import { ConicButton } from "@/components/ConicButton";
 import { CONFIG } from "@/utils/config";
 
@@ -16,13 +15,8 @@ export default function BlogsPage() {
     <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-8 select-none">
       <div className="w-full flex flex-col lg:flex-row gap-8">
         
-        {/* Left Sidebar */}
-        <div className="hidden lg:block lg:w-1/4">
-          <Sidebar />
-        </div>
-
         {/* Main Content */}
-        <div className="w-full lg:w-3/4 flex flex-col gap-8 text-left">
+        <div className="w-full flex flex-col gap-8 text-left">
           
           {/* Main Title Banner */}
           <section className="w-full bg-[#0c1322] border border-[#9C27B0]/10 rounded-md p-6 md:p-8 flex flex-col gap-4 shadow-lg shadow-black">

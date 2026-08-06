@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import React from "react";
-import { Sidebar } from "@/components/Sidebar";
-
 export const metadata: Metadata = {
   title: "Fantasy Sports Guide for Beginners | Registration, Login & Account Recovery",
   description: "Learn how fantasy sports platforms work with this beginner-friendly guide. Understand registration, login, account recovery, security tips, FAQs, and responsible participation.",
@@ -12,13 +10,8 @@ export default function BeginnerGuidePage() {
     <div className="w-full max-w-7xl mx-auto px-4 md:px-6 py-8 select-none">
       <div className="w-full flex flex-col lg:flex-row gap-8">
         
-        {/* Left Sidebar */}
-        <div className="hidden lg:block lg:w-1/4">
-          <Sidebar />
-        </div>
-
         {/* Main Content */}
-        <div className="w-full lg:w-3/4 flex flex-col gap-8 text-left">
+        <div className="w-full flex flex-col gap-8 text-left">
           
           <article className="w-full bg-[#0c1322] border border-[#9C27B0]/10 rounded-md p-6 md:p-10 shadow-lg shadow-black">
             
