@@ -39,6 +39,12 @@ export default function BlogsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
+                  title: "Fantasy Sports Guide for Beginners | Registration, Login & Account Recovery",
+                  date: "August 5, 2026",
+                  desc: "Learn how fantasy sports platforms work with this beginner-friendly guide. Understand registration, login, account recovery, security tips, FAQs, and responsible participation.",
+                  slug: "beginner-guide"
+                },
+                {
                   title: "Reddy Bookie Blog | Betting Tips, Cricket News & Casino Guides",
                   date: "July 8, 2026",
                   desc: "The U19 Asia Cup 2026 is expected in October. Defending champions Pakistan, expected teams, format, past winners, last edition's recap and how to watch — all in one place.",

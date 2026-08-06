@@ -8,8 +8,8 @@ import { FloatingButtons } from "@/components/FloatingButtons";
 
 
 export const metadata: Metadata = {
-  title: "Reddy Anna | Live Cricket Betting ID and Online Sports Platform",
-  description: "Get your Reddy Anna ID for live cricket betting, sports exchange, and online gaming. Fast registration, secure platform, and 24/7 customer support.",
+  title: "Fantasy Sports Guide for Beginners | Registration, Login & Account Recovery",
+  description: "Learn how fantasy sports platforms work with this beginner-friendly guide. Understand registration, login, account recovery, security tips, FAQs, and responsible participation.",
 };
 
 export default function HomePage() {
